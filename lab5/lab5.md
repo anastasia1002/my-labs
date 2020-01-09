@@ -5,9 +5,11 @@ import math
 n = int(input("натуральне число"))
 x = float(input("дійсне число"))
 sum = 0
+m = 1
 i = math.cos(x)
 while i <= math.cos(x) ** n:
-    sum = i + math.cos(x)
+    sum +=  math.cos(x) ** m
+    m+=1
 else:
     sum = math.cos(x) ** n
 print(sum)
@@ -47,7 +49,7 @@ while math.fabs(math.sin(k * x) / k) > eps:
 print (sum, x, eps)
 ```
 ## Task4
-__Нехай x_0=0,x_1=7.Знайти x_i=x_i-1(1+x_i-2) де і=2,3...__
+__Нехай x_0=-1,x_1=5.Знайти x_i=x_i-1(1+x_i-2) де і=2,3...__
 ```py 
 n = int(input("n = "))
 i = 2

@@ -9,7 +9,7 @@ class TCircle:
         self.x=x
         self.y=y
     def S(self):
-        return self.r * math.pi
+        return self.r**2 * math.pi
     def R(self):
         return  self.x<= self.r and self.y<=self.r
 
